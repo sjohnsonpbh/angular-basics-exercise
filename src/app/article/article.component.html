@@ -9,6 +9,13 @@
   explicabo repellendus!
 </p>
 
-<div class="btn btn-primary">
-  <button type="reset" class="techRelated"></button>
+<div class="container">
+  <button
+    class="btn btn-primary"
+    [disabled]="!isTechRelated"
+    (click)="onTechRelatedClick()"
+    [(ngModel)]="isTechRelated"
+  >
+    change isTechRelated
+  </button>
 </div>

@@ -9,4 +9,12 @@ export class ArticleComponent {
   title: string = 'Whatever you want.';
   content: string = 'Some content goes here.';
   isTechRelated: boolean = true;
+
+  onTechRelatedClick() {
+    if (this.isTechRelated === true) {
+      this.isTechRelated = !this.isTechRelated;
+    } else {
+      this.isTechRelated = !this.isTechRelated;
+    }
+  }
 }
