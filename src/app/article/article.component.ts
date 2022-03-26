@@ -11,6 +11,7 @@ export class ArticleComponent {
   isTechRelated: boolean = true;
 
   onTechRelatedClick() {
+    // remember me - this is two way data binding for a boolean
     if (this.isTechRelated === true) {
       this.isTechRelated = !this.isTechRelated;
     } else {
