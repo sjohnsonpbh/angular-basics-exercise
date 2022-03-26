@@ -8,6 +8,14 @@
   quasi perferendis aut voluptatum! Quibusdam ducimus, blanditiis impedit aut
   explicabo repellendus!
 </p>
+<!-- <p *ngIf="isTechRelated" -->
+
+<p *ngIf="isTechRelated; else !isTechRelated">
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eius
+  laudantium, quia commodi deleniti sint alias facilis numquam libero veritatis
+  obcaecati fuga ducimus ex, quas nihil quidem eligendi reprehenderit.
+  Provident.
+</p>
 
 <div class="container">
   <button
